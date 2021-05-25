@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
@@ -6,7 +5,6 @@
     <title>Spigot插件开发教程</title>
     <link rel="shortcut icon" href="img/icon.png" type="image/x-icon">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <meta name="description" content="A MC plugin development tutorial by pony!" />
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no, viewport-fit=cover">
     <style>
         .docsify-copy-code-button {
@@ -14,7 +12,7 @@
         }
     </style>
     <script src="//cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple-dark.css">
     <style>
         em{
             color:#b3b3b3;
@@ -43,16 +41,26 @@
             crossChapter: true,
             crossChapterText: true,
         },
+
+        search: 'auto',
+
+        search: {
+            maxAge: 86400000,
+            placeholder: '搜索...',
+            noData: '找不到结果，换个关键词试试吧qwq',
+            depth: 6,
+            hideOtherSidebarContent: false,
+            namespace: 'Tutorials',
+        },
         repo: 'https://github.com/PluginDev303/Tutorials',
         themeColor: '#25798A',
-        subMaxLevel: 5,
+        subMaxLevel: 6,
         loadNavbar: true,
         coverpage: false
     };
 </script>
+<script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
 <script src="//cdn.jsdelivr.net/gh/Andy-K-Sparklight/PluginDiary/log.js"></script>
-
-
 <link
         rel="stylesheet"
         href="//cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"
@@ -61,6 +69,22 @@
         rel="stylesheet"
         href="//cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/v4-shims.min.css"
 />
+
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk/dist/gitalk.css">
+
+<script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/gitalk.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/gitalk/dist/gitalk.min.js"></script>
+<script>
+    var gitalk = new Gitalk({
+        clientID: '3d647c242bf06af11676',
+        clientSecret: 'c27cfa74e54893d54b42a63ec646df98f77e43eb',
+        repo: 'https://github.com/GCB-Blog/Gitalk',
+        owner: 'GCB-Blog',
+        admin: ['GCB-Blog'],
+        distractionFreeMode: false
+    })
+</script>
+
 <style>
     @font-face {
         font-family: "Fira Code";
@@ -183,11 +207,13 @@
 <script src="https://cdn.jsdelivr.net/npm/docsify/lib/plugins/external-script.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/docsify/lib/plugins/zoom-image.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/prismjs/components/prism-java.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/prismjs/components/prism-cpp.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/prismjs/components/prism-groovy.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/prismjs/components/prism-properties.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/prismjs/components/prism-yaml.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/prismjs/components/prism-sql.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/prismjs/components/prism-json.min.js"></script>
+
 <script>
     var install = function (hook, vm) {
         hook.doneEach(function(){
@@ -198,5 +224,6 @@
     }
     $docsify.plugins = [].concat(install, $docsify.plugins);
 </script>
+
 </body>
 </html>
