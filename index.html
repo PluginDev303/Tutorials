@@ -73,16 +73,24 @@
 <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk/dist/gitalk.css">
 
 <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/gitalk.min.js"></script>
+<script src="https://unpkg.com/docsify@4.8.6/lib/plugins/gitalk.min.js">
 <script src="//cdn.jsdelivr.net/npm/gitalk/dist/gitalk.min.js"></script>
 <script>
     var gitalk = new Gitalk({
         clientID: '3d647c242bf06af11676',
         clientSecret: 'c27cfa74e54893d54b42a63ec646df98f77e43eb',
-        repo: 'https://github.com/GCB-Blog/Gitalk',
+        repo: 'Gitalk',
         owner: 'GCB-Blog',
         admin: ['GCB-Blog'],
-        distractionFreeMode: false
+        distractionFreeMode: false,
+        title: location.hash.match(/#(.*?)([?]|$)/)[1],
+        id: location.hash.match(/#(.*?)([?]|$)/)[1]
     })
+    window.onhashchange = function(event){
+        if(event.newURL.split('?')[0] !== event.oldURL .split('?')[0]) {
+            location.reload()
+        }
+    }
 </script>
 
 <style>
