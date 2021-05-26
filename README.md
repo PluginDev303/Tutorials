@@ -5,7 +5,6 @@
 ## 技术信息  
 本教程调用了RarityEG的`build.js`和`log.js`  
 GitHub Pages 托管了本站点。  
-本教程使用了[RarityEG's Plugin Dev Tutorial](https://plgdev.xuogroup.top)的源模板  
 ## 内容信息  
 本教程一部分内容取自tdian的教程，已经在文章开头标注  
 <h2>开源项目</h2>

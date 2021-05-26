@@ -7,4 +7,4 @@
 点击配置-插件，搜索Minecraft
 ![图片没了qwq](../img/new(2).png)
 ![图片没了qwq](../img/new(3).png)
-![图片没了qwq](../img/new(4).png)
+![图片没了qwq](../img/new(4).png)  
