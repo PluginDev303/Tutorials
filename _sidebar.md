@@ -11,3 +11,4 @@
     - [联系方式 (s-1)](special/callme.md)
     - [新建项目 (s-2)](special/new.md)
     - [下载附件 (s-3)](special/download.md)
+    - [协议文本 (s-4)](special/License.md)
