@@ -25,11 +25,14 @@
     </style>
     <style>
     </style>
-<body>
-
+<body oncontextmenu="return false" onselectstart="return false">
+<!--<body oncopy="alert('对不起，禁止复制！');return false;">-->
 <div id="app"></div>
 <script>
     window.$docsify = {
+        <!--logo: 'img/icon.png',-->
+        onlyCover: false,
+        notFoundPage: 'Error404.md',
         <!-- countable: true,-->
         fontsize:'0.9em',
         color:'rgb(90,90,90)',
